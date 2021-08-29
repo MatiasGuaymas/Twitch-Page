@@ -80,51 +80,51 @@ body {
 
 .streamersAnimacion1 {
   animation: slideInRight;
-  animation-duration: 4s; }
+  animation-duration: 2.5s; }
 
 .streamersAnimacion2 {
   animation: slideInRight;
-  animation-duration: 4.2s; }
+  animation-duration: 2.7s; }
 
 .streamersAnimacion3 {
   animation: slideInRight;
-  animation-duration: 4.5s; }
+  animation-duration: 2.9s; }
 
 .streamersAnimacion4 {
   animation: slideInRight;
-  animation-duration: 4.8s; }
+  animation-duration: 3.1s; }
 
 .streamersAnimacion5 {
   animation: slideInRight;
-  animation-duration: 4.9s; }
+  animation-duration: 3.2s; }
 
 .streamersAnimacion6 {
   animation: slideInRight;
-  animation-duration: 5.2s; }
+  animation-duration: 3.4s; }
 
 .streamersAnimacion7 {
   animation: slideInRight;
-  animation-duration: 5.3s; }
+  animation-duration: 3.5s; }
 
 .streamersAnimacion8 {
   animation: slideInRight;
-  animation-duration: 5.6s; }
+  animation-duration: 3.8s; }
 
 .streamersAnimacion9 {
   animation: slideInRight;
-  animation-duration: 5.5s; }
+  animation-duration: 3.7s; }
 
 .streamersAnimacion10 {
   animation: slideInRight;
-  animation-duration: 5.7s; }
+  animation-duration: 3.9s; }
 
 .tiendaInicio1 {
   animation: fadeIn;
-  animation-duration: 2.5s; }
+  animation-duration: 1.5s; }
 
 .tiendaInicio2 {
   animation: fadeIn;
-  animation-duration: 3.2s; }
+  animation-duration: 1.8s; }
 
 .alinearBoton {
   margin-top: 380px;
