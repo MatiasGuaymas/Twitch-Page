@@ -1,0 +1,102 @@
+.imagenCentrarTwitch {
+	animation: backInUp;
+	animation-duration: 3s;
+	margin-top: $one-percent;
+	margin-left: 28%;
+}
+.imagenCentrarFamilia {
+	animation: backInUp;
+	animation-duration: 4.5s;
+	margin-top: $one-percent;
+}
+
+.contenedor__index--Izquierda1 { 
+	animation: backInUp;
+	animation-duration: 3.5s;
+}
+.contenedor__index--Izquierda2 { 
+	animation: backInUp;
+	animation-duration: 3.8s;
+}
+.contenedor__index--Izquierda3 { 
+	animation: backInUp;
+	animation-duration: 4.1s;
+}
+.contenedor__index--Izquierda4 { 
+	animation: backInUp;
+	animation-duration: 4.4s;
+}
+.cajaEntera__index--Izquierda2 { 
+	margin-top: $one-percent;
+	margin-left: 2.5%;
+	margin-bottom: $one-percent;
+	animation: backInUp;
+	animation-duration: 5s;
+	width: 35%;
+}
+.cajaEntera__twitch--Izquierda /*Operacion en Margin-left*/ { /*Bloque BEM*/
+	margin-top: $one-percent;
+	margin-left: ($three-percent)-0.5;
+	margin-bottom: $one-percent;
+	animation: backInRight;
+	animation-duration: 1.5s;
+	width: 35%;
+}
+.cajaEntera__twitch--Derecha { /*Bloque BEM*/
+	margin-top: $one-percent;
+	animation: backInLeft;
+	animation-duration: 1.5s;
+	margin-left: 2rem;
+	width: 37%;
+}
+
+.streamersAnimacion1{
+	animation: slideInRight;
+	animation-duration: 4s;
+}
+.streamersAnimacion2{
+	animation: slideInRight;
+	animation-duration: 4.2s;
+}
+.streamersAnimacion3{
+	animation: slideInRight;
+	animation-duration: 4.5s;
+}
+.streamersAnimacion4{
+	animation: slideInRight;
+	animation-duration: 4.8s;
+}
+
+.streamersAnimacion5{
+	animation: slideInRight;
+	animation-duration: 4.9s;
+}
+.streamersAnimacion6{
+	animation: slideInRight;
+	animation-duration: 5.2s;
+}
+.streamersAnimacion7{
+	animation: slideInRight;
+	animation-duration: 5.3s;
+}
+.streamersAnimacion8{
+	animation: slideInRight;
+	animation-duration: 5.6s;
+}
+
+.streamersAnimacion9{
+	animation: slideInRight;
+	animation-duration: 5.5s;
+}
+.streamersAnimacion10{
+	animation: slideInRight;
+	animation-duration: 5.7s;
+}
+.tiendaInicio1 {
+ animation: fadeIn;
+ animation-duration:2.5s ;
+}
+.tiendaInicio2 {
+ animation: fadeIn;
+ animation-duration:3.2s ;
+}

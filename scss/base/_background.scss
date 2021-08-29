@@ -1,0 +1,17 @@
+body {
+	background-color: $background-body;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.categorias_Fondo { /*Bloque BEM*/
+	background-color: $color-white;
+	border: $color-black;
+	display: inline-block;
+	margin-left: 7%;
+	margin-top: $one-percent;
+	min-width: 280px;
+}

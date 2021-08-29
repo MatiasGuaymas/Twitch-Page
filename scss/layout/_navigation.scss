@@ -1,0 +1,35 @@
+a {
+	text-decoration: none;
+	font-size: 2rem;
+}
+.subrayado {
+	text-decoration: none;
+	margin-left: 16px;
+	margin-right: 16px;
+	font-size: 48px;
+	&:after {
+		content: "";
+		position: absolute;
+		background-color: $color-lilac;
+		height: 3px;
+		width: $reset;
+		left: $reset;
+		bottom: -10px;
+		transition: 0.3s;
+	}
+	&:hover {
+		color: $color-white;
+		&:after {
+			width: $html;
+		}
+	}
+}
+
+.imagenLogo {
+	max-width: 120px;
+	max-height: 120px;
+	margin-left: -32px;
+	&:hover {
+		transform: scale(1.15,1.15);
+	}
+}

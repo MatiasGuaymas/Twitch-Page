@@ -1,0 +1,75 @@
+/*Diseñado y modificado para el Desafio complementario*/
+$box-shadow: 0 .3rem 1rem rgba($color-black, .15) !default;
+$enable-shadows: false !default;
+/*Each*/
+@mixin box-shadow($shadow...) {
+    @if $enable-shadows {
+      $result: ();  
+      @each $value in $shadow {
+        @if $value != null {
+          $result: append($result, $value, "comma");
+        }
+        @if $value == none and length($shadow) > 1 {
+          @warn "La palabra clave 'none' debe usarse como un único argumento.";
+        }
+      }
+      @if (length($result) > 0) {
+        box-shadow: $result;
+      }
+    }
+  }
+
+/*Mapas: colores mas oscuros*/ 
+$blue:    #1168eb !default;
+$indigo:  #5e13d6 !default;
+$purple:  #532e99 !default;
+$pink:    #f83b99 !default;
+$red:     #f8031c !default;
+$orange:  #d46810 !default;
+
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+);
+
+/*Bucles*/
+$grid-columns:                12 !default;
+$grid-gutter-width:           1.5rem !default;
+$grid-row-columns:            6 !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+
+@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+    @each $breakpoint in map-keys($breakpoints) {
+      $infix: breakpoint-infix($breakpoint, $breakpoints);
+      @include media-breakpoint-up($breakpoint, $breakpoints) {
+        .col#{$infix} {
+          flex: 2 0 0%; 
+        }
+        .row-cols#{$infix}-auto > * {
+          @include make-col-auto();
+        }
+        @if $grid-row-columns > 0 {
+          @for $i from 1 through $grid-row-columns {
+            .row-cols#{$infix}-#{$i} {
+              @include row-cols($i);
+            }
+          }
+        }
+      }
+    }
+}
+        
+      
+  

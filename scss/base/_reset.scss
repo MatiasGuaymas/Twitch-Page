@@ -1,0 +1,9 @@
+html {
+	font-size: $html;
+}
+* {
+	box-sizing: border-box;
+	font-family: 'Prompt', sans-serif;
+	margin: $reset;
+	padding: $reset;
+}

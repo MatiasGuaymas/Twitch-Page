@@ -1,0 +1,130 @@
+.juntarTexto {
+	display: flex;
+}
+p {
+	color: $color-black;
+	font-size: 1.813rem;
+	line-height: 1.5;
+	letter-spacing: 1, 5px;
+}
+#textoPrincipal {
+	color: $color-black;
+	font-size: 2.3rem;
+	line-height: 1.5;
+	letter-spacing: 1, 5px;
+}
+.cajaEntera__texto--Derecha { /*Bloque BEM*/
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-left: 5rem;
+	width: 55%;
+	height: $html;
+}
+.cajaEntera__texto--Derecha2 { /*Bloque BEM*/
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-left: 3.5%;
+	width: 53%;
+	height: $html;
+}
+.cajaEntera__texto--Derecha3 { /*Bloque BEM*/
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-left: 5rem;
+	width: 55%;
+	height: $html;
+	text-align: center;
+}
+.index__texto--Centrado {
+	padding: $text-padding;
+	text-align: center;
+}
+.gente__texto--Centrado {
+	padding: $text-padding;
+	text-align: center;
+	color: $color-black;
+	font-size: 2.5rem;
+	line-height: 1.6;
+	letter-spacing: 1, 5px;
+}
+.preguntas__texto--Centrado /*Extend*/{
+	@extend .index__texto--Centrado; 
+}
+.preguntas__Titulo--Centrado /*Operacion*/{
+	padding: ($text-padding)-20; 
+	text-align: center;
+}
+.textoCuadros {
+	position: absolute;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	left: $reset;
+	margin-top: 850px;
+	margin-left: 80px;
+}
+.informacion {
+	margin-left: 10px;
+	font-size: 1.8rem;
+}
+.categorias_indice { /*Bloque BEM*/
+	color: $color-black;
+	font-size: 2.625rem;
+}
+.categorias_seccion { /*Bloque BEM*/
+	color: $color-black;
+	font-size: 2.25rem;
+}
+.tienda_texto { /*Bloque BEM*/
+	margin-top: 390px;
+	margin-left: -330px;
+}
+.tienda_texto2 { /*Bloque BEM*/
+	margin-top: 395px;
+	margin-left: -290px;
+}
+
+#centrado{
+    text-align: center;
+}
+.small-container h2 {
+	font-size: 3.2rem;
+	margin-bottom: 30px;
+	color: black;
+	position: relative;
+	line-height: 90px;
+}
+.small-container h2::after {
+	content: "";
+	background: $color-lilac;
+	width: 180px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.columna-2 p {
+	font-size: 1.4rem;
+	font-weight: 100;
+}
+.columna-2 h3 {
+	color: black;
+	margin-bottom: 0.15rem;
+}
+.columna-4 p {
+	font-size: 1.5rem;
+}
+
+.rating .fa {
+	color: $color-orange;
+}
+
+small {
+	color: #555;
+}
