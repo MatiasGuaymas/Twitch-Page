@@ -1011,6 +1011,10 @@ small {
     font-size: 1rem;
     margin-left: 20%; } }
 
+@media (min-width: 1460px) and (max-width: 2000px) {
+  #banner img {
+    height: 84.4vh; } }
+
 /*Diseñado y modificado para el Desafio complementario*/
 /*Each*/
 /*Mapas: colores mas oscuros*/
