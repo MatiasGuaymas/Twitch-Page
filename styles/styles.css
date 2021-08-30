@@ -1,4 +1,6 @@
+/*------------------------------Empieza el CSS*/
 @charset "UTF-8";
+/*---------------------------Reset CSS*/
 html {
   font-size: 100%; }
 
@@ -7,7 +9,7 @@ html {
   font-family: 'Prompt', sans-serif;
   margin: 0px;
   padding: 0px; }
-
+/*---------------------------Background*/
 body {
   background-color: #F0F0F0;
   background-repeat: no-repeat;
@@ -25,18 +27,8 @@ body {
   margin-left: 7%;
   margin-top: 1%;
   min-width: 280px; }
-
-.imagenCentrarTwitch {
-  animation: backInUp;
-  animation-duration: 3s;
-  margin-top: 1%;
-  margin-left: 28%; }
-
-.imagenCentrarFamilia {
-  animation: backInUp;
-  animation-duration: 4.5s;
-  margin-top: 1%; }
-
+/*---------------------------Animaciones*/
+/*Index*/
 .contenedor__index--Izquierda1 {
   animation: backInUp;
   animation-duration: 3.5s; }
@@ -53,6 +45,7 @@ body {
   animation: backInUp;
   animation-duration: 4.4s; }
 
+  /*Argentina*/
 .cajaEntera__index--Izquierda2 {
   margin-top: 1%;
   margin-left: 2.5%;
@@ -62,7 +55,6 @@ body {
   width: 35%; }
 
 .cajaEntera__twitch--Izquierda {
-  /*Bloque BEM*/
   margin-top: 1%;
   margin-left: 2.5%;
   margin-bottom: 1%;
@@ -71,13 +63,13 @@ body {
   width: 35%; }
 
 .cajaEntera__twitch--Derecha {
-  /*Bloque BEM*/
   margin-top: 1%;
   animation: backInLeft;
   animation-duration: 1.5s;
   margin-left: 2rem;
   width: 37%; }
 
+/*Streamers*/
 .streamersAnimacion1 {
   animation: slideInRight;
   animation-duration: 2.5s; }
@@ -118,6 +110,7 @@ body {
   animation: slideInRight;
   animation-duration: 3.9s; }
 
+/*Tienda*/
 .tiendaInicio1 {
   animation: fadeIn;
   animation-duration: 1.5s; }
@@ -126,18 +119,7 @@ body {
   animation: fadeIn;
   animation-duration: 1.8s; }
 
-.alinearBoton {
-  margin-top: 380px;
-  margin-left: -10px; }
-
-.alinearBoton2 {
-  margin-top: 400px;
-  margin-left: 25px; }
-
-.hr {
-  min-width: 220px;
-  max-width: 220px; }
-
+/*---------------------------Botones y líneas*/
 .boton {
   display: inline-block;
   background: #845EC2;
@@ -146,6 +128,10 @@ body {
   margin: 30px 0;
   border-radius: 2rem; }
 
+.subrayado {
+  text-decoration: underline; }
+
+/*---------------------------Listas*/
 ul {
   list-style: none; }
 
@@ -153,6 +139,8 @@ li {
   list-style: none;
   position: relative; }
 
+/*---------------------------Media*/
+/*Cajas*/
 .cajaEntera1 {
   display: flex;
   flex-direction: row;
@@ -175,6 +163,7 @@ li {
   background-color: #F2ECFF;
   padding: 32px; }
 
+/*Imágenes: portadas, bordes*/
 img {
   border-radius: 2rem; }
 
@@ -227,6 +216,7 @@ video {
   width: 100%;
   border-radius: 0; }
 
+/*---------------------------Containers*/
 .fila {
   display: flex;
   flex-wrap: wrap;
@@ -240,6 +230,7 @@ section {
   width: 100%;
   margin-bottom: 25px; }
 
+/*Banner y blog*/
 #banner {
   position: relative; }
 
@@ -277,7 +268,6 @@ section {
   margin-top: 5px; }
 
 .tienda_fila {
-  /*Bloque BEM*/
   margin-left: 400px;
   margin-top: -680px;
   display: flex;
@@ -307,10 +297,6 @@ section {
   .tienda_imagen:hover {
     transform: scale(1.05, 1.05); }
 
-.talle {
-  margin-top: 450px;
-  margin-left: -250px; }
-
 .filaStore {
   display: flex;
   align-items: center;
@@ -320,6 +306,7 @@ section {
 .categories {
   margin: 4rem 0; }
 
+/*---------------------------Columnas*/
 .columna-2 {
   flex-basis: 50%;
   min-width: 300px; }
@@ -378,12 +365,14 @@ section {
 .columna-5 img:hover {
   filter: grayscale(0); }
 
+/*---------------------------Formularios*/
 .formCajas {
   margin-bottom: 2%; }
 
 textarea {
   resize: none; }
 
+/*---------------------------Navigation*/
 a {
   text-decoration: none;
   font-size: 2rem; }
@@ -414,6 +403,7 @@ a {
   .imagenLogo:hover {
     transform: scale(1.15, 1.15); }
 
+/*---------------------------Headers*/
 h1 {
   color: #8685EF;
   font-weight: 900;
@@ -499,6 +489,7 @@ h5 {
   font-weight: normal;
   font-size: 1.75rem; }
 
+/*---------------------------Texto*/
 .juntarTexto {
   display: flex; }
 
@@ -514,8 +505,8 @@ p {
   line-height: 1.5;
   letter-spacing: 1, 5px; }
 
+/*---------------------------Cajas Argentina*/
 .cajaEntera__texto--Derecha {
-  /*Bloque BEM*/
   position: relative;
   display: flex;
   flex-direction: column;
@@ -524,7 +515,6 @@ p {
   height: 100%; }
 
 .cajaEntera__texto--Derecha2 {
-  /*Bloque BEM*/
   position: relative;
   display: flex;
   flex-direction: column;
@@ -533,7 +523,6 @@ p {
   height: 100%; }
 
 .cajaEntera__texto--Derecha3 {
-  /*Bloque BEM*/
   position: relative;
   display: flex;
   flex-direction: column;
@@ -542,6 +531,7 @@ p {
   height: 100%;
   text-align: center; }
 
+/*---------------------------Index*/
 .index__texto--Centrado, .preguntas__texto--Centrado {
   padding: 25px;
   text-align: center; }
@@ -572,28 +562,25 @@ p {
   font-size: 1.8rem; }
 
 .categorias_indice {
-  /*Bloque BEM*/
   color: black;
   font-size: 2.625rem; }
 
 .categorias_seccion {
-  /*Bloque BEM*/
   color: black;
   font-size: 2.25rem; }
 
 .tienda_texto {
-  /*Bloque BEM*/
   margin-top: 390px;
   margin-left: -330px; }
 
 .tienda_texto2 {
-  /*Bloque BEM*/
   margin-top: 395px;
   margin-left: -290px; }
 
 #centrado {
   text-align: center; }
 
+/*---------------------------Tienda: containers, columnas, etc*/
 .small-container h2 {
   font-size: 3.2rem;
   margin-bottom: 30px;
@@ -629,6 +616,7 @@ p {
 small {
   color: #555; }
 
+/*Media queries*/
 @media only screen and (max-width: 320px) and (min-width: 1px) {
   h1 {
     color: #8685EF;
@@ -711,7 +699,6 @@ small {
   .cajaEntera__twitch--Izquierda, .cajaEntera__twitch--Derecha {
     display: none; }
   .cajaEntera__texto--Derecha {
-    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -719,7 +706,6 @@ small {
     width: 100%;
     height: 100%; }
   .cajaEntera__texto--Derecha2 {
-    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -794,7 +780,6 @@ small {
   .cajaEntera__twitch--Izquierda, .cajaEntera__twitch--Derecha {
     display: none; }
   .cajaEntera__texto--Derecha {
-    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -802,7 +787,6 @@ small {
     width: 100%;
     height: 100%; }
   .cajaEntera__texto--Derecha2 {
-    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -874,7 +858,6 @@ small {
   .cajaEntera__twitch--Izquierda, .cajaEntera__twitch--Derecha {
     display: none; }
   .cajaEntera__texto--Derecha {
-    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -882,7 +865,6 @@ small {
     width: 100%;
     height: 100%; }
   .cajaEntera__texto--Derecha2 {
-    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1016,8 +998,3 @@ small {
     height: 84.4vh; }
   #titulo__PrincipalIndex {
     font-size: 7rem; } }
-
-/*Diseñado y modificado para el Desafio complementario*/
-/*Each*/
-/*Mapas: colores mas oscuros*/
-/*Bucles*/

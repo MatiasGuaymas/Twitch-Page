@@ -1,15 +1,3 @@
-.imagenCentrarTwitch {
-	animation: backInUp;
-	animation-duration: 3s;
-	margin-top: $one-percent;
-	margin-left: 28%;
-}
-.imagenCentrarFamilia {
-	animation: backInUp;
-	animation-duration: 4.5s;
-	margin-top: $one-percent;
-}
-
 .contenedor__index--Izquierda1 { 
 	animation: backInUp;
 	animation-duration: 3.5s;
@@ -34,7 +22,7 @@
 	animation-duration: 5s;
 	width: 35%;
 }
-.cajaEntera__twitch--Izquierda /*Operacion en Margin-left*/ { /*Bloque BEM*/
+.cajaEntera__twitch--Izquierda  { 
 	margin-top: $one-percent;
 	margin-left: ($three-percent)-0.5;
 	margin-bottom: $one-percent;
@@ -42,7 +30,7 @@
 	animation-duration: 1.5s;
 	width: 35%;
 }
-.cajaEntera__twitch--Derecha { /*Bloque BEM*/
+.cajaEntera__twitch--Derecha { 
 	margin-top: $one-percent;
 	animation: backInLeft;
 	animation-duration: 1.5s;
