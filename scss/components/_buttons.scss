@@ -9,3 +9,13 @@
 .subrayado {
 	text-decoration: underline;
 }
+
+.btn-outline-danger {
+	border-color: $color-pink;
+	color: $color-pink;
+}
+
+.btn-outline-danger:hover {
+	border-color: $color-pink;
+	background-color: $color-pink;
+}

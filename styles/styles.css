@@ -1,6 +1,3 @@
-/*------------------------------Empieza el CSS*/
-@charset "UTF-8";
-/*---------------------------Reset CSS*/
 html {
   font-size: 100%; }
 
@@ -9,7 +6,7 @@ html {
   font-family: 'Prompt', sans-serif;
   margin: 0px;
   padding: 0px; }
-/*---------------------------Background*/
+
 body {
   background-color: #F0F0F0;
   background-repeat: no-repeat;
@@ -27,8 +24,7 @@ body {
   margin-left: 7%;
   margin-top: 1%;
   min-width: 280px; }
-/*---------------------------Animaciones*/
-/*Index*/
+
 .contenedor__index--Izquierda1 {
   animation: backInUp;
   animation-duration: 3.5s; }
@@ -45,7 +41,6 @@ body {
   animation: backInUp;
   animation-duration: 4.4s; }
 
-  /*Argentina*/
 .cajaEntera__index--Izquierda2 {
   margin-top: 1%;
   margin-left: 2.5%;
@@ -69,7 +64,6 @@ body {
   margin-left: 2rem;
   width: 37%; }
 
-/*Streamers*/
 .streamersAnimacion1 {
   animation: slideInRight;
   animation-duration: 2.5s; }
@@ -110,7 +104,6 @@ body {
   animation: slideInRight;
   animation-duration: 3.9s; }
 
-/*Tienda*/
 .tiendaInicio1 {
   animation: fadeIn;
   animation-duration: 1.5s; }
@@ -119,7 +112,6 @@ body {
   animation: fadeIn;
   animation-duration: 1.8s; }
 
-/*---------------------------Botones y líneas*/
 .boton {
   display: inline-block;
   background: #845EC2;
@@ -131,7 +123,14 @@ body {
 .subrayado {
   text-decoration: underline; }
 
-/*---------------------------Listas*/
+.btn-outline-danger {
+  border-color: #E67DDB;
+  color: #E67DDB; }
+
+.btn-outline-danger:hover {
+  border-color: #E67DDB;
+  background-color: #E67DDB; }
+
 ul {
   list-style: none; }
 
@@ -139,8 +138,6 @@ li {
   list-style: none;
   position: relative; }
 
-/*---------------------------Media*/
-/*Cajas*/
 .cajaEntera1 {
   display: flex;
   flex-direction: row;
@@ -163,7 +160,6 @@ li {
   background-color: #F2ECFF;
   padding: 32px; }
 
-/*Imágenes: portadas, bordes*/
 img {
   border-radius: 2rem; }
 
@@ -216,7 +212,6 @@ video {
   width: 100%;
   border-radius: 0; }
 
-/*---------------------------Containers*/
 .fila {
   display: flex;
   flex-wrap: wrap;
@@ -230,7 +225,6 @@ section {
   width: 100%;
   margin-bottom: 25px; }
 
-/*Banner y blog*/
 #banner {
   position: relative; }
 
@@ -297,6 +291,10 @@ section {
   .tienda_imagen:hover {
     transform: scale(1.05, 1.05); }
 
+.talle {
+  margin-top: 450px;
+  margin-left: -250px; }
+
 .filaStore {
   display: flex;
   align-items: center;
@@ -306,7 +304,6 @@ section {
 .categories {
   margin: 4rem 0; }
 
-/*---------------------------Columnas*/
 .columna-2 {
   flex-basis: 50%;
   min-width: 300px; }
@@ -365,14 +362,12 @@ section {
 .columna-5 img:hover {
   filter: grayscale(0); }
 
-/*---------------------------Formularios*/
 .formCajas {
   margin-bottom: 2%; }
 
 textarea {
   resize: none; }
 
-/*---------------------------Navigation*/
 a {
   text-decoration: none;
   font-size: 2rem; }
@@ -397,13 +392,15 @@ a {
       width: 100%; }
 
 .imagenLogo {
-  max-width: 120px;
-  max-height: 120px;
+  max-width: 100px;
+  max-height: 100px;
   margin-left: -32px; }
   .imagenLogo:hover {
     transform: scale(1.15, 1.15); }
 
-/*---------------------------Headers*/
+.nav-link {
+  font-size: 2.6rem; }
+
 h1 {
   color: #8685EF;
   font-weight: 900;
@@ -418,7 +415,7 @@ h1 {
   font-size: 8rem; }
 
 #tituloPrincipal {
-  color: #C6C0F8;
+  color: #F3C5FF;
   font-weight: 900;
   margin-top: 7rem;
   font-size: 7.5rem;
@@ -489,7 +486,6 @@ h5 {
   font-weight: normal;
   font-size: 1.75rem; }
 
-/*---------------------------Texto*/
 .juntarTexto {
   display: flex; }
 
@@ -505,8 +501,8 @@ p {
   line-height: 1.5;
   letter-spacing: 1, 5px; }
 
-/*---------------------------Cajas Argentina*/
 .cajaEntera__texto--Derecha {
+  /*Bloque BEM*/
   position: relative;
   display: flex;
   flex-direction: column;
@@ -515,6 +511,7 @@ p {
   height: 100%; }
 
 .cajaEntera__texto--Derecha2 {
+  /*Bloque BEM*/
   position: relative;
   display: flex;
   flex-direction: column;
@@ -523,6 +520,7 @@ p {
   height: 100%; }
 
 .cajaEntera__texto--Derecha3 {
+  /*Bloque BEM*/
   position: relative;
   display: flex;
   flex-direction: column;
@@ -531,7 +529,6 @@ p {
   height: 100%;
   text-align: center; }
 
-/*---------------------------Index*/
 .index__texto--Centrado, .preguntas__texto--Centrado {
   padding: 25px;
   text-align: center; }
@@ -562,25 +559,28 @@ p {
   font-size: 1.8rem; }
 
 .categorias_indice {
+  /*Bloque BEM*/
   color: black;
   font-size: 2.625rem; }
 
 .categorias_seccion {
+  /*Bloque BEM*/
   color: black;
   font-size: 2.25rem; }
 
 .tienda_texto {
+  /*Bloque BEM*/
   margin-top: 390px;
   margin-left: -330px; }
 
 .tienda_texto2 {
+  /*Bloque BEM*/
   margin-top: 395px;
   margin-left: -290px; }
 
 #centrado {
   text-align: center; }
 
-/*---------------------------Tienda: containers, columnas, etc*/
 .small-container h2 {
   font-size: 3.2rem;
   margin-bottom: 30px;
@@ -616,7 +616,6 @@ p {
 small {
   color: #555; }
 
-/*Media queries*/
 @media only screen and (max-width: 320px) and (min-width: 1px) {
   h1 {
     color: #8685EF;
@@ -667,7 +666,7 @@ small {
   #textoPrincipal {
     font-size: 1.1rem; }
   .nav-link {
-    font-size: 1.875rem; }
+    font-size: 1.5rem; }
   .dropdown-item {
     font-size: 1.5rem; }
   #blog img {
@@ -699,6 +698,7 @@ small {
   .cajaEntera__twitch--Izquierda, .cajaEntera__twitch--Derecha {
     display: none; }
   .cajaEntera__texto--Derecha {
+    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -706,6 +706,7 @@ small {
     width: 100%;
     height: 100%; }
   .cajaEntera__texto--Derecha2 {
+    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -769,7 +770,7 @@ small {
   #textoPrincipal {
     font-size: 1.1rem; }
   .nav-link {
-    font-size: 42px; }
+    font-size: 1.7rem; }
   #blog img {
     margin: 1rem 2rem;
     width: 100%;
@@ -780,6 +781,7 @@ small {
   .cajaEntera__twitch--Izquierda, .cajaEntera__twitch--Derecha {
     display: none; }
   .cajaEntera__texto--Derecha {
+    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -787,6 +789,7 @@ small {
     width: 100%;
     height: 100%; }
   .cajaEntera__texto--Derecha2 {
+    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -858,6 +861,7 @@ small {
   .cajaEntera__twitch--Izquierda, .cajaEntera__twitch--Derecha {
     display: none; }
   .cajaEntera__texto--Derecha {
+    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -865,6 +869,7 @@ small {
     width: 100%;
     height: 100%; }
   .cajaEntera__texto--Derecha2 {
+    /*Bloque BEM*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -946,7 +951,7 @@ small {
     color: #C6C0F8;
     font-weight: 900;
     margin-top: 10rem;
-    font-size: 7.5rem;
+    font-size: 5.5rem;
     text-align: center; } }
 
 @media (min-width: 40em) {
@@ -995,6 +1000,10 @@ small {
 
 @media (min-width: 1460px) and (max-width: 2000px) and (min-width: 1440px) and (max-width: 2000px) {
   #banner img {
-    height: 84.4vh; }
+    height: 86.5vh; }
   #titulo__PrincipalIndex {
     font-size: 7rem; } }
+
+/*Each*/
+/*Mapas: colores mas oscuros*/
+/*Bucles*/

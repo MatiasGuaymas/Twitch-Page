@@ -26,10 +26,14 @@ a {
 }
 
 .imagenLogo {
-	max-width: 120px;
-	max-height: 120px;
+	max-width: 100px;
+	max-height: 100px;
 	margin-left: -32px;
 	&:hover {
 		transform: scale(1.15,1.15);
 	}
+}
+
+.nav-link {
+	font-size: 2.6rem;
 }
