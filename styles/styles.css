@@ -406,7 +406,7 @@ a {
     color: white; }
     .subrayado:hover:after {
       width: 100%; }
-/*  */
+
 .imagenLogo {
   max-width: 120px;
   max-height: 120px;
@@ -1011,13 +1011,11 @@ small {
     font-size: 1rem;
     margin-left: 20%; } }
 
-@media (min-width: 1460px) and (max-width: 2000px) {
+@media (min-width: 1460px) and (max-width: 2000px) and (min-width: 1440px) and (max-width: 2000px) {
   #banner img {
-    height: 84.4vh; } 
+    height: 84.4vh; }
   #titulo__PrincipalIndex {
-    font-size: 7.5rem; }
-  }
-
+    font-size: 7rem; } }
 
 /*Diseñado y modificado para el Desafio complementario*/
 /*Each*/

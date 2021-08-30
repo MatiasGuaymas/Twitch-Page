@@ -528,7 +528,10 @@
 }
 
 @media (min-width: 1460px) and (max-width: 2000px) {
-    #banner img{
-		height: 84.4vh;
-	}
+    @media (min-width: 1440px) and (max-width: 2000px) {
+		#banner img {
+		  height: 84.4vh; } 
+		#titulo__PrincipalIndex {
+		  font-size: 7rem; }
+		}
 }
